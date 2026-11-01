@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo EJS</title>
+</head>
+<body>
+<%- include('partials/navbar') %>
+<main>
+  <h1>Selamat Datang, <%= namaPengguna %>!</h1>
+  <p>Ini adalah aplikasi pertama menggunakan EJS.</p>
+  <% if (sudahLogin) { %>
+    <p>Status: peserta sudah masuk (data simulasi).</p>
+  <% } else { %>
+    <p>Status: tamu (data simulasi).</p>
+  <% } %>
+  <h2>Materi hari ini</h2>
+  <% if (daftarMateri.length === 0) { %>
+    <p>Belum ada materi.</p>
+  <% } else { %>
+    <ul>
+      <% daftarMateri.forEach(function(materi) { %>
+        <li><%= materi %></li>
+      <% }); %>
+    </ul>
+  <% } %>
+  <p><a href="/?status=tamu">Lihat cabang tamu</a> | <a href="/?daftar=kosong">Lihat daftar kosong</a></p>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

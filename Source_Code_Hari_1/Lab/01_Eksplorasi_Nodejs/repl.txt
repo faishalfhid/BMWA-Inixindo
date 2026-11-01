@@ -1,0 +1,16 @@
+Jalankan node pada terminal untuk masuk REPL.
+Ketik baris berikut satu per satu, tanpa menyalin tanda > dari terminal:
+
+let pesan = "Halo dari Server Node.js!";
+console.log(pesan);
+let hasil = 10 * 5;
+console.log("Hasil perkalian: " + hasil);
+
+Hasil yang dicari:
+Halo dari Server Node.js!
+Hasil perkalian: 50
+
+REPL juga menampilkan undefined untuk hasil deklarasi atau console.log; itu wajar.
+Keluar dengan Ctrl+C dua kali atau .exit.
+Jika let sudah dideklarasikan dalam sesi yang sama, ubah nilainya tanpa let
+atau mulai sesi REPL baru.
