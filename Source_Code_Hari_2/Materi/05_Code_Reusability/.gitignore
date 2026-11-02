@@ -1,0 +1,5 @@
+# Salin aturan ini ke .gitignore pada proyek latihan.
+node_modules/
+.env
+.env.*
+!.env.example
