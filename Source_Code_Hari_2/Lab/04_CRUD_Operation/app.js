@@ -1,7 +1,7 @@
 // Ganti seluruh isi app.js pada proyek latihan Anda dengan kode ini.
 // Jalankan node app.js dari folder proyek latihan yang memuat views/.
 // Kode ini mempertahankan beranda dan tabel karyawan dari hari 1.
-// Gunakan Prisma 6.19.0; salin schema/config dan jalankan migrasi/generate lebih dahulu.
+// Gunakan Prisma 6.19.0; salin schema/config dan jalankan db push/generate lebih dahulu.
 require('dotenv').config();
 const express = require('express');
 const { body, validationResult } = require('express-validator');

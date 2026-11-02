@@ -1,4 +1,4 @@
-// Salin ke proyek latihan setelah schema dimigrasikan dan Prisma Client dibuat.
+// Salin ke proyek latihan setelah schema disinkronkan dengan db push dan Prisma Client dibuat.
 // Jalankan: node cek-koneksi.js
 require('dotenv').config();
 const { PrismaClient } = require('@prisma/client');
@@ -11,7 +11,7 @@ async function cekKoneksi() {
     console.log('Koneksi PostgreSQL berhasil.');
     console.log(`Jumlah barang: ${jumlah}`);
   } catch (err) {
-    console.error('Koneksi gagal. Periksa DATABASE_URL, migrasi, dan koneksi internet.');
+    console.error('Koneksi gagal. Periksa DATABASE_URL, sinkronisasi skema, dan koneksi internet.');
     process.exitCode = 1;
   } finally {
     await prisma.$disconnect();

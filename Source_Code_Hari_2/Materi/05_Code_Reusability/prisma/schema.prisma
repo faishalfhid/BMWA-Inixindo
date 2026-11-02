@@ -3,9 +3,9 @@
 // npm install --save-dev --save-exact prisma@6.19.0
 // npm install --save-exact @prisma/client@6.19.0
 // npx prisma validate
-// npx prisma migrate dev --name init_barang
+// npx prisma db push
 // npx prisma generate
-// Migrasi membentuk tabel pada DATABASE_URL milik peserta.
+// db push menyinkronkan tabel latihan tanpa membuat riwayat migrasi.
 generator client {
   provider = "prisma-client-js"
 }
